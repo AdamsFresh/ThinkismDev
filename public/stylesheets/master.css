@@ -1,0 +1,89 @@
+body {
+  bacground: #000;
+}
+.navbar-brand{
+  font-family: "Kaushan script", "Helvetica Neue", Helvetica, Arial, cursive;
+}
+
+body { padding-top: 0px; }
+
+.header{
+  background-image: url('../images/miami-day.jpg');
+  min-height: 500px;
+  background-size: cover;
+  color: #fff;
+  padding-top: 10%;
+  background-position: center;
+}
+
+.header p {
+  font-size: 30px;
+}
+
+.heading{
+  font-size: 40px;
+  line-height: 40px;
+  font-style: italic;
+  font-family: "droid serif", "Helvetica Neue";
+
+}
+
+.subheading{
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 75px;
+}
+
+.header .btn {
+  background-color: yellow;
+  color: #000;
+  border-radius: 5px;
+  padding: 15px 20px;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  background-color: yellow;
+}
+
+.header .btn:hover {
+  background-color: #fec503;
+  border-color: #f6bf01;
+}
+
+.nav a {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.nav a:hover {
+  background-color: rgba(255,255,255,0.1) !important;
+}
+
+.navbar-bg {
+  background: #111;
+}
+
+.navbar-brand{
+  color: #fed136;
+}
+.features .glyphicon {
+  font-size: 20rem;
+}
+.service-heading{
+  font-family: 'Architects Daughter', Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+.description{
+  text-align: center;
+  font-family: 'Kaushan Script', cursive;
+}
+.service-images{
+  font-size: 20rem;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>adamsfontin.com</title>
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+<link rel="stylesheet" href="/stylesheets/master.css">
+
+<!-- Custom Fonts -->
+<link href="stylesheets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Bangers|Kaushan+Script|Roboto+Slab" rel="stylesheet">
+
+  </head>
+  <body>
+
+      <nav class="navbar navbar-default navbar-fixed-top">
+<div class="container-fluid">
+      <a class="navbar-brand" href="#">Thinkism Inc</a>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#">Services</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+          </ul>
+
+</div>
+</nav>
+<div class="header text-center">
+
+<h1 class="heading">Welcome to Thinkism Dev</h1>
+  <p class="subheading">
+      It's nice to meet you
+  </p>
+  <a class="btn btn-primary btn-lg"href="#">Tell Me More</a>
+    </div>
+
+    <section class="services">
+        <h1 class="service-heading">Services</h1>
+        <p class="description">
+            Lorem ipsum description
+        </p>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                </div>
+            <div class="col-md-4">
+              <span class="service-images glyphicon glyphicon-sunglasses" aria-hidden="true"></span>
+            </div>
+            <div class="col-md-4">
+              <span class="service-images glyphicon glyphicon-sunglasses" aria-hidden="true"></span>
+            </div>
+            <div class="col-md-4">
+              <span class="service-images glyphicon glyphicon-sunglasses" aria-hidden="true"></span>
+            </div>
+        </div>
+
+    </section>
+    <section class="container">
+
+        <% if (submission) { %>
+          <div class="bg-sucess">
+              <p>Thank you for your submission. We will be getting back to you ASAP! ~ Thinkism Dev</p>
+          </div>
+          <% } else if (submission == false) { %>
+            <div class="bg-danger">
+              <p>
+                Sorry this didn't work for you, please resubmit ~ Thinkism Dev
+              </p>
+            </div>
+        <% } %>
+
+        <form form class="form-horizontal" method="post" data-parsley-validate>
+            <div class="form-group">
+                <label class="control-label col-sm-2">Email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" name="email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2">Message</label>
+                <div class="col-sm-10">
+                    <textarea class="form-control" name="message" minlength="6" maxlength="1000"></textarea>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-10 col-sm-offset-2">
+                    <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+
+        <table class="contact-entries table table-striped">
+          <thead>
+          <tr>
+            <th>
+              ID
+            </th>
+            <th>
+              Name
+            </th>
+            <th>
+              Message
+            </th>
+          </tr>
+          </thead>
+          <tbody>
+
+        <% for (row in entries) { %>
+        <tr>
+            <td><%= entries[row]._id %></td>
+            <td><%= entries[row].email %></td>
+            <td><%= entries[row].message %></td>
+        </tr>
+      <% } %>
+  Info Table
+</table>
+    </section>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+
+<script src="/javascripts/contact-entries.js"></script>
+
+  <script src="/javascripts/navbar-scroll.js"></script>
+
+  <script src="parsleyjs/parsley.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <source src="/js/navbar-scroll.js">
+  </body>
+</html>
